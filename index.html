@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>DJJS</title>
+</head>
+
+<body>
+    <h1 id="firsth1" style="text-align: center">TYPE R-T-Y-U-I-O TO PLAY SOUNDS</h1>
+    <h1 id="secondh1" style="text-align: center">DISCO<br>MODE</h1>
+    <h2 style="text-align: center">Choose the track</h2>
+    <div id="soundtracks">
+        <select id="tracks">
+            <option value="firstSoundTrack">DJ 1</option>
+            <option value="secondSoundTrack">DJ 2</option>
+            <option value="thirdSoundTrack">DJ 3</option>
+            <option value="fourthSoundTrack">DJ 4</option>
+        </select>
+        <button id="playSong"></button>
+        <button id="stopSong"></button>
+    </div>
+    <div id="musics">
+        <audio controls id="firstOne">
+            <source src="music/EDM.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls id="secondOne">
+            <source src="music/Boosted Trap Car2.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls id="thirdOne">
+            <source src="music/Car Boosted Trap1.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls id="fourthOne">
+            <source src="music/AlanWalker.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div id="lightning-balls">
+        <div class="ball" id="firstBall"></div>
+        <div class="ball" id="secondBall"></div>
+        <div class="ball" id="thirdBall"></div>
+        <div class="ball" id="fourthBall"></div>
+        <div class="ball" id="fifthBall"></div>
+        <div class="ball" id="sixthBall"></div>
+    </div>
+    <div id="boxes-storage">
+        <div class="boxes" id="f-box">
+        </div>
+        <div class="boxes" id="second-box">
+        </div>
+        <div class="boxes" id="third-box">
+        </div>
+        <div class="boxes" id="fourth-box">
+        </div>
+        <div class="boxes" id="fifth-box">
+        </div>
+        <div class="boxes" id="s-box">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.15/howler.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
